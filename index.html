@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polityka prywatności — Grosik</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { color: #2e7d32; border-bottom: 2px solid #2e7d32; padding-bottom: 10px; }
+  h2 { color: #2e7d32; margin-top: 32px; }
+  .lang-switch { text-align: right; margin-bottom: 20px; }
+  .lang-switch a { text-decoration: none; color: #2e7d32; font-weight: bold; }
+  .updated { color: #666; font-style: italic; margin-bottom: 30px; }
+  ul { padding-left: 20px; }
+  code { background: #f3f3f3; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch"><a href="#english">English version ↓</a></div>
+
+<!-- ========== WERSJA POLSKA ========== -->
+<section id="polski">
+
+<h1>Polityka prywatności aplikacji Grosik</h1>
+<p class="updated">Ostatnia aktualizacja: 17.04.2026</p>
+
+<p>Niniejsza polityka prywatności opisuje, w jaki sposób aplikacja mobilna <strong>Grosik</strong> („Aplikacja") obsługuje dane użytkownika. Aplikacja została zaprojektowana w modelu <strong>offline-first</strong> — Twoje dane finansowe pozostają na Twoim urządzeniu i nie są przesyłane na nasze serwery.</p>
+
+<h2>1. Administrator danych</h2>
+<p>Administratorem danych jest <strong>Kamil Jachurski</strong>. Kontakt: <a href="mailto:hello@example.com">Grosik.app@gmail.com</a>.</p>
+
+<h2>2. Jakie dane gromadzi Aplikacja</h2>
+
+<h3>2.1. Dane przechowywane wyłącznie na urządzeniu</h3>
+<p>Następujące dane są zapisywane lokalnie w bazie danych na Twoim telefonie i <strong>nie opuszczają urządzenia</strong> bez Twojej zgody:</p>
+<ul>
+  <li>Transakcje finansowe (kwota, kategoria, data, opis)</li>
+  <li>Budżety i cele oszczędnościowe</li>
+  <li>Portfele i konta</li>
+  <li>Subskrypcje cykliczne</li>
+  <li>Historia osiągnięć i poziom XP</li>
+  <li>Ustawienia aplikacji (waluta, język, preferencje powiadomień)</li>
+</ul>
+<p>Baza danych jest szyfrowana algorytmem <strong>AES-256</strong> (SQLCipher). Klucz szyfrujący przechowywany jest w Android Keystore.</p>
+
+<h3>2.2. Dane opcjonalnie wysyłane poza urządzenie</h3>
+<p>Następujące funkcje wymagają połączenia z internetem i powodują wysłanie danych poza urządzenie <strong>tylko jeśli aktywnie ich używasz</strong>:</p>
+
+<ul>
+  <li><strong>Kopia zapasowa Google Drive (opcjonalna):</strong> po włączeniu funkcji zaszyfrowana kopia bazy danych jest zapisywana na Twoim prywatnym Dysku Google w folderze aplikacji. Nie mamy dostępu do tych danych — są widoczne wyłącznie dla Ciebie w Twoim koncie Google.</li>
+  <li><strong>Kursy walut (opcjonalne, tylko Premium):</strong> jeśli używasz wielu walut, Aplikacja pobiera aktualne kursy z publicznego API <a href="https://frankfurter.app">frankfurter.app</a>. Nie przesyłamy tam żadnych danych użytkownika — tylko kody walut (np. EUR→PLN).</li>
+  <li><strong>Google Play Billing:</strong> zakupy subskrypcji Premium są obsługiwane przez systemowy mechanizm Google Play. Aplikacja otrzymuje jedynie potwierdzenie zakupu i nie ma dostępu do danych karty płatniczej.</li>
+</ul>
+
+<h3>2.3. Czego Aplikacja NIE robi</h3>
+<ul>
+  <li>❌ Nie zbieramy danych analitycznych ani telemetrycznych</li>
+  <li>❌ Nie używamy reklam ani trackerów reklamowych</li>
+  <li>❌ Nie udostępniamy Twoich danych osobom trzecim</li>
+  <li>❌ Nie mamy dostępu do Twoich transakcji ani salda</li>
+  <li>❌ Nie synchronizujemy się z Twoim bankiem (funkcja w planach)</li>
+</ul>
+
+<h2>3. Uprawnienia aplikacji</h2>
+<ul>
+  <li><strong>Biometria / PIN:</strong> używane lokalnie do odblokowania Aplikacji. Dane biometryczne nie opuszczają urządzenia.</li>
+  <li><strong>Powiadomienia:</strong> lokalne przypomnienia o budżetach i transakcjach cyklicznych.</li>
+  <li><strong>Internet:</strong> tylko dla opcjonalnych funkcji (backup, kursy walut, Google Play Billing).</li>
+  <li><strong>Konto Google (opcjonalne):</strong> tylko jeśli włączysz kopię zapasową na Google Drive.</li>
+</ul>
+
+<h2>4. Twoje prawa (RODO)</h2>
+<p>Zgodnie z Rozporządzeniem Parlamentu Europejskiego (RODO) masz prawo do:</p>
+<ul>
+  <li><strong>Dostępu do danych</strong> — wszystkie Twoje dane są widoczne w Aplikacji i możesz je wyeksportować do CSV/PDF w Ustawieniach.</li>
+  <li><strong>Usunięcia danych</strong> — odinstalowanie Aplikacji usuwa wszystkie dane z urządzenia. Kopie zapasowe na Dysku Google możesz usunąć samodzielnie z poziomu Google Drive.</li>
+  <li><strong>Przenoszenia danych</strong> — eksport do CSV/PDF dostępny w Ustawieniach.</li>
+  <li><strong>Wniesienia skargi</strong> do Prezesa Urzędu Ochrony Danych Osobowych (UODO).</li>
+</ul>
+
+<h2>5. Bezpieczeństwo</h2>
+<ul>
+  <li>Baza danych szyfrowana AES-256 (SQLCipher)</li>
+  <li>Klucze szyfrujące w Android Keystore</li>
+  <li>Biometryczna blokada aplikacji (BIOMETRIC_STRONG)</li>
+  <li>FLAG_SECURE — ochrona przed zrzutami ekranu</li>
+  <li>Preferencje aplikacji w EncryptedSharedPreferences</li>
+</ul>
+
+<h2>6. Dzieci</h2>
+<p>Aplikacja nie jest skierowana do dzieci poniżej 13. roku życia i nie gromadzi świadomie ich danych.</p>
+
+<h2>7. Zmiany polityki</h2>
+<p>Wszelkie istotne zmiany niniejszej polityki będą komunikowane w Aplikacji i na tej stronie. Data ostatniej aktualizacji jest podana na górze dokumentu.</p>
+
+<h2>8. Kontakt</h2>
+<p>Pytania dotyczące prywatności: <a href="mailto:hello@example.com">Grosik.app@gmail.com</a></p>
+
+</section>
+
+<hr style="margin: 60px 0;">
+
+<!-- ========== ENGLISH VERSION ========== -->
+<section id="english">
+
+<h1>Grosik — Privacy Policy</h1>
+<p class="updated">Last updated: 17.04.2026</p>
+
+<p>This privacy policy describes how the <strong>Grosik</strong> mobile application ("the App") handles user data. The App is designed as <strong>offline-first</strong> — your financial data remains on your device and is not transmitted to our servers.</p>
+
+<h2>1. Data Controller</h2>
+<p>Data controller: <strong>Kamil Jachurski</strong>. Contact: <a href="mailto:hello@example.com">Grosik.app@gmail.com</a>.</p>
+
+<h2>2. What Data the App Collects</h2>
+
+<h3>2.1. Data stored only on your device</h3>
+<p>The following data is stored locally in a database on your phone and <strong>does not leave your device</strong> without your consent:</p>
+<ul>
+  <li>Financial transactions (amount, category, date, description)</li>
+  <li>Budgets and savings goals</li>
+  <li>Wallets and accounts</li>
+  <li>Recurring subscriptions</li>
+  <li>Achievement and XP history</li>
+  <li>App settings (currency, language, notification preferences)</li>
+</ul>
+<p>The database is encrypted with <strong>AES-256</strong> (SQLCipher). The encryption key is stored in Android Keystore.</p>
+
+<h3>2.2. Data optionally sent off-device</h3>
+<p>The following features require an internet connection and send data off-device <strong>only when actively used</strong>:</p>
+<ul>
+  <li><strong>Google Drive backup (optional):</strong> when enabled, an encrypted copy of your database is saved to your private Google Drive app folder. We have no access to this data — it is visible only to you in your Google account.</li>
+  <li><strong>Exchange rates (optional, Premium only):</strong> if you use multiple currencies, the App fetches current rates from the public <a href="https://frankfurter.app">frankfurter.app</a> API. No user data is sent — only currency codes (e.g. EUR→PLN).</li>
+  <li><strong>Google Play Billing:</strong> Premium subscription purchases are handled by the system-level Google Play mechanism. The App receives only the purchase confirmation and has no access to payment card data.</li>
+</ul>
+
+<h3>2.3. What the App does NOT do</h3>
+<ul>
+  <li>❌ No analytics or telemetry collection</li>
+  <li>❌ No advertising or ad trackers</li>
+  <li>❌ No data sharing with third parties</li>
+  <li>❌ No access to your transactions or balances</li>
+  <li>❌ No bank synchronization (planned feature)</li>
+</ul>
+
+<h2>3. App Permissions</h2>
+<ul>
+  <li><strong>Biometrics / PIN:</strong> used locally to unlock the App. Biometric data never leaves your device.</li>
+  <li><strong>Notifications:</strong> local reminders for budgets and recurring transactions.</li>
+  <li><strong>Internet:</strong> only for optional features (backup, exchange rates, Google Play Billing).</li>
+  <li><strong>Google Account (optional):</strong> only if you enable Google Drive backup.</li>
+</ul>
+
+<h2>4. Your Rights (GDPR)</h2>
+<p>Under EU GDPR you have the right to:</p>
+<ul>
+  <li><strong>Access your data</strong> — all your data is visible in the App and can be exported to CSV/PDF in Settings.</li>
+  <li><strong>Delete your data</strong> — uninstalling the App removes all data from your device. Google Drive backups can be deleted from Google Drive directly.</li>
+  <li><strong>Data portability</strong> — CSV/PDF export available in Settings.</li>
+  <li><strong>Lodge a complaint</strong> with your local data protection authority.</li>
+</ul>
+
+<h2>5. Security</h2>
+<ul>
+  <li>AES-256 database encryption (SQLCipher)</li>
+  <li>Encryption keys stored in Android Keystore</li>
+  <li>Biometric app lock (BIOMETRIC_STRONG)</li>
+  <li>FLAG_SECURE — screenshot protection</li>
+  <li>App preferences in EncryptedSharedPreferences</li>
+</ul>
+
+<h2>6. Children</h2>
+<p>The App is not directed to children under 13 and does not knowingly collect their data.</p>
+
+<h2>7. Changes to This Policy</h2>
+<p>Any material changes to this policy will be communicated in the App and on this page. The last updated date is shown at the top of this document.</p>
+
+<h2>8. Contact</h2>
+<p>Privacy questions: <a href="mailto:hello@example.com">Grosik.app@gmail.com</a></p>
+
+</section>
+
+</body>
+</html>{\rtf1}
