@@ -23,7 +23,7 @@
 <section id="polski">
 
 <h1>Polityka prywatności aplikacji Grosik</h1>
-<p class="updated">Ostatnia aktualizacja: 18.04.2026</p>
+<p class="updated">Ostatnia aktualizacja: 29.04.2026</p>
 
 <p>Niniejsza polityka prywatności opisuje, w jaki sposób aplikacja mobilna <strong>Grosik</strong> („Aplikacja") obsługuje dane użytkownika. Aplikacja została zaprojektowana w modelu <strong>offline-first</strong> — Twoje dane finansowe pozostają na Twoim urządzeniu i nie są przesyłane na nasze serwery.</p>
 
@@ -36,11 +36,14 @@
 <p>Następujące dane są zapisywane lokalnie w bazie danych na Twoim telefonie i <strong>nie opuszczają urządzenia</strong> bez Twojej zgody:</p>
 <ul>
   <li>Transakcje finansowe (kwota, kategoria, data, opis)</li>
+  <li>Kategorie wydatków i przychodów (w tym tworzone przez Ciebie)</li>
   <li>Budżety i cele oszczędnościowe</li>
   <li>Portfele i konta</li>
+  <li>Powtarzające się transakcje (szablony cyklicznych przychodów i wydatków)</li>
   <li>Subskrypcje cykliczne</li>
   <li>Historia osiągnięć i poziom XP</li>
   <li>Ustawienia aplikacji (waluta, język, preferencje powiadomień)</li>
+  <li>Cache kursów walut (dane techniczne pobrane z frankfurter.app, nie zawierają informacji o Tobie)</li>
 </ul>
 <p>Baza danych jest szyfrowana algorytmem <strong>AES-256</strong> (SQLCipher). Klucz szyfrujący przechowywany jest w Android Keystore.</p>
 
@@ -66,7 +69,10 @@
 <ul>
   <li><strong>Biometria / PIN:</strong> używane lokalnie do odblokowania Aplikacji. Dane biometryczne nie opuszczają urządzenia.</li>
   <li><strong>Powiadomienia:</strong> lokalne przypomnienia o budżetach i transakcjach cyklicznych.</li>
+  <li><strong>Wibracje:</strong> sygnał haptyczny towarzyszący powiadomieniom.</li>
+  <li><strong>Uruchomienie po restarcie urządzenia:</strong> przywrócenie zaplanowanych powiadomień (budżety, subskrypcje, transakcje cykliczne) po włączeniu telefonu.</li>
   <li><strong>Internet:</strong> tylko dla opcjonalnych funkcji (backup, kursy walut, Google Play Billing).</li>
+  <li><strong>Stan sieci:</strong> sprawdzanie dostępności połączenia przed wywołaniami sieciowymi (np. żeby nie próbować backupu bez Wi-Fi).</li>
   <li><strong>Konto Google (opcjonalne):</strong> tylko jeśli włączysz kopię zapasową na Google Drive.</li>
 </ul>
 
@@ -89,7 +95,7 @@
 </ul>
 
 <h2>6. Dzieci</h2>
-<p>Aplikacja nie jest skierowana do dzieci poniżej 13. roku życia i nie gromadzi świadomie ich danych.</p>
+<p>Aplikacja nie jest skierowana do dzieci poniżej 16. roku życia i nie gromadzi świadomie ich danych. Próg wieku odpowiada polskiej implementacji RODO (art. 8 ust. 1 w związku z ustawą o ochronie danych osobowych z 2018 r.).</p>
 
 <h2>7. Zmiany polityki</h2>
 <p>Wszelkie istotne zmiany niniejszej polityki będą komunikowane w Aplikacji i na tej stronie. Data ostatniej aktualizacji jest podana na górze dokumentu.</p>
@@ -105,7 +111,7 @@
 <section id="english">
 
 <h1>Grosik — Privacy Policy</h1>
-<p class="updated">Last updated: 18.04.2026</p>
+<p class="updated">Last updated: 29.04.2026</p>
 
 <p>This privacy policy describes how the <strong>Grosik</strong> mobile application ("the App") handles user data. The App is designed as <strong>offline-first</strong> — your financial data remains on your device and is not transmitted to our servers.</p>
 
@@ -118,11 +124,14 @@
 <p>The following data is stored locally in a database on your phone and <strong>does not leave your device</strong> without your consent:</p>
 <ul>
   <li>Financial transactions (amount, category, date, description)</li>
+  <li>Expense and income categories (including ones you create)</li>
   <li>Budgets and savings goals</li>
   <li>Wallets and accounts</li>
+  <li>Recurring transactions (templates for recurring income and expenses)</li>
   <li>Recurring subscriptions</li>
   <li>Achievement and XP history</li>
   <li>App settings (currency, language, notification preferences)</li>
+  <li>Exchange rate cache (technical data fetched from frankfurter.app, contains no information about you)</li>
 </ul>
 <p>The database is encrypted with <strong>AES-256</strong> (SQLCipher). The encryption key is stored in Android Keystore.</p>
 
@@ -147,7 +156,10 @@
 <ul>
   <li><strong>Biometrics / PIN:</strong> used locally to unlock the App. Biometric data never leaves your device.</li>
   <li><strong>Notifications:</strong> local reminders for budgets and recurring transactions.</li>
+  <li><strong>Vibration:</strong> haptic feedback accompanying notifications.</li>
+  <li><strong>Run on device boot:</strong> restoring scheduled notifications (budgets, subscriptions, recurring transactions) after the phone is turned on.</li>
   <li><strong>Internet:</strong> only for optional features (backup, exchange rates, Google Play Billing).</li>
+  <li><strong>Network state:</strong> checking connection availability before network calls (e.g. to avoid attempting backup without Wi-Fi).</li>
   <li><strong>Google Account (optional):</strong> only if you enable Google Drive backup.</li>
 </ul>
 
@@ -170,7 +182,7 @@
 </ul>
 
 <h2>6. Children</h2>
-<p>The App is not directed to children under 13 and does not knowingly collect their data.</p>
+<p>The App is not directed to children under 16 and does not knowingly collect their data. The age threshold reflects the Polish implementation of GDPR (Article 8(1) in conjunction with the Polish Personal Data Protection Act 2018).</p>
 
 <h2>7. Changes to This Policy</h2>
 <p>Any material changes to this policy will be communicated in the App and on this page. The last updated date is shown at the top of this document.</p>
